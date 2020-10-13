@@ -303,10 +303,10 @@ RUN if [ ${INSTALL_XSL} = true ]; then \
 
 ARG INSTALL_LDAP=false
 
-RUN if [ ${INSTALL_LDAP} = true ]; then \
-    apt-get install -y libldap2-dev && \
-    apt-get install -y php${LARADOCK_PHP_VERSION}-ldap \
-;fi
+#jw: RUN if [ ${INSTALL_LDAP} = true ]; then \
+    #jw: apt-get install -y libldap2-dev && \
+    #jw: apt-get install -y php${LARADOCK_PHP_VERSION}-ldap \
+#;fi
 
 ###########################################################################
 # SMB:
