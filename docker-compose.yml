@@ -193,6 +193,18 @@ services:
       links:
         - docker-in-docker
 
+### Bytemark-Webdav ##############################################
+    webdav:
+      image: bytemark/webdav
+      ports:
+        - "${WEBDAV_HOST_PORT}:80"
+      environment:
+        AUTH_TYPE: Digest
+        USERNAME: "${WEBDAV_USER}"
+        PASSWORD: "${WEBDAV_PASSWORD}"
+      volumes:
+        - ~/srv/dav:/var/lib/dav
+
 ### PHP-FPM ##############################################
     php-fpm:
       build:
