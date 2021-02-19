@@ -2,6 +2,12 @@
 ###################### General Setup ######################
 ###########################################################
 
+DB_HOST=postgres
+
+WEBDAV_HOST_PORT=16001
+WEBDAV_USER=doculix
+WEBDAV_PASSWORD=doculix
+
 ### Paths #################################################
 
 # Point to the path of your applications code on your host
