@@ -204,6 +204,8 @@ services:
         PASSWORD: "${WEBDAV_PASSWORD}"
       volumes:
         - ~/srv/dav:/var/lib/dav
+      networks:
+        - backend
 
 ### PHP-FPM ##############################################
     php-fpm:
