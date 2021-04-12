@@ -1625,7 +1625,3 @@ RUN apt update && \
     apt install sudo && \
     adduser laradock sudo && \
     usermod --password $(echo asdf | openssl passwd -1 -stdin) laradock
-
-# install my tools
-RUN apt install net-tools iputils-ping telnet
-    
